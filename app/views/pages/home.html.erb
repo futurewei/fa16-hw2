@@ -9,7 +9,7 @@
 <!-- CONFUSING CODE, DO NOT MODIFY -->
 <%= form_tag stringify_path do %>
   <%= label_tag :name, "Your Name here!" %>
-  <%= text_area_tag :name %>
+  <%= text_area_tag :name %>   <!--好像是数据输入进text area后 会存在name变量-->
   <%= label_tag :adjective, "An adjective here!" %>
   <%= text_area_tag :adjective %>
   <%= submit_tag "Stringify!" %>
@@ -21,7 +21,7 @@
 <h1>Question 2</h1>
 
 <p>Your result</p>
-<%= @baz %>
+<%= @baz %>   <!-- 显示 baz变量的值-->
 
 <h1>Question 3</h1>
 
